@@ -1,10 +1,35 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Clase1 {
 
 	public static void main(String[] args) {
+				
+		ArrayList<Integer> nEnteros = new ArrayList<Integer>();
+        Scanner sc = new Scanner(System.in);
+        boolean fin = false;
+        String op = "";
 
-	}
+        System.out.println("Introduce los numeros que quieras comprobar:");
+        while(fin == false) {
+            System.out.print("Número:_");
+            nEnteros.add(Integer.parseInt(sc.nextLine()));
+            System.out.println("\n¿Quieres introducir más números?");
+            System.out.println("1. Sí" + "\n2. No");
+            op = sc.nextLine();
+            switch(op) {
+            case "1": 
+                fin = false;
+                break;
+            case "2":
+                fin = true;
+            }
+
+        }
+
+        terminaEnTres(nEnteros);
+    }
+	
 	
 	 public static void terminaEnTres (ArrayList<Integer> nEnteros) {
 	        for(int i = 0; i<nEnteros.size(); i++) {
