@@ -1,16 +1,41 @@
 import java.util.ArrayList;
-
+import java.util.Scanner;
 public class clase2 {
+	
 	public static void main (String []args) {
 		ArrayList<Integer> numeros = new ArrayList<Integer>();
+		Scanner sc = new Scanner(System.in);
+		boolean fin = false;
+		String op = "";
+		
+		System.out.println("Introduce los numeros que quieras sacar la media:");
+		while(fin == false) {
+			System.out.print("Número:_");
+			numeros.add(Integer.parseInt(sc.nextLine()));
+			System.out.println("\n¿Quieres introducir más números?");
+			System.out.println("1. Sí" + "\n2. No");
+			op = sc.nextLine();
+			switch(op) {
+			case "1": 
+				fin = false;
+				break;
+			case "2":
+				fin = true;
+			}
+			
+		}
+		
+		metodo(numeros);
+		
 	}
-	public void metodo(ArrayList<Integer>numeros) {
-		int suma=0;
+	
+	public static void metodo(ArrayList<Integer>numeros) {
+		double suma=0;
 		for(int i=0;i<numeros.size();i++) {
 		suma = suma+ numeros.get(i);
 		}
 		suma/=numeros.size();
-		
+		System.out.println(suma);
 	}
 
 }
