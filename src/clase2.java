@@ -25,17 +25,22 @@ public class clase2 {
 			
 		}
 		
-		metodo(numeros);
+		System.out.println(metodo(numeros));
 		
 	}
 	
 	public static double metodo(ArrayList<Integer>numeros) {
 		double suma=0;
-		for(int i=0;i<numeros.size();i++) {
-		suma = suma+ numeros.get(i);
+		
+		if(numeros.get(0) > 0) {
+			for(int i=0;i<numeros.size();i++) {
+				suma = suma+ numeros.get(i);
+				}
+				suma/=numeros.size();
+				System.out.println(suma);
+		}else {
+			suma = 0;
 		}
-		suma/=numeros.size();
-		System.out.println(suma);
 		return suma;
 	}
 
