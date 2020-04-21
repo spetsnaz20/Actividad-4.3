@@ -27,7 +27,7 @@ public class Clase1 {
 
         }
 
-        terminaEnTres(nEnteros);
+       System.out.println(terminaEnTres(nEnteros));
     }
 	
 	
