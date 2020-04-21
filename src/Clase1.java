@@ -31,13 +31,13 @@ public class Clase1 {
     }
 	
 	
-	 public static void terminaEnTres (ArrayList<Integer> nEnteros) {
+	 public static String terminaEnTres (ArrayList<Integer> nEnteros) {
 	        for(int i = 0; i<nEnteros.size(); i++) {
 	            if(nEnteros.get(i)%10 == 3) {
-	                System.out.println(nEnteros.get(i) + " acaba en 3");
+	                return nEnteros.get(i) + " acaba en 3";
 	            }
 	        }
-	    
+	    return "ningun numero acaba en 3";
 	}
 
 }
