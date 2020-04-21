@@ -29,13 +29,14 @@ public class clase2 {
 		
 	}
 	
-	public static void metodo(ArrayList<Integer>numeros) {
+	public static double metodo(ArrayList<Integer>numeros) {
 		double suma=0;
 		for(int i=0;i<numeros.size();i++) {
 		suma = suma+ numeros.get(i);
 		}
 		suma/=numeros.size();
 		System.out.println(suma);
+		return suma;
 	}
 
 }
