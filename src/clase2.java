@@ -1,6 +1,15 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+/**
+ * @author Víctor Rodríguez
+ * @author Eduardo González
+ *
+ */
 public class clase2 {
+	/**
+	 * 
+	 * @param args main
+	 */
 	
 	public static void main (String []args) {
 		ArrayList<Integer> numeros = new ArrayList<Integer>();
@@ -28,6 +37,11 @@ public class clase2 {
 		System.out.println(metodo(numeros));
 		
 	}
+	/**
+	 * 
+	 * @param numeros guarda los numeros que se van a sumar en un Arraylist
+	 * @return devuelve el total de la suma de los numeros
+	 */
 	
 	public static double metodo(ArrayList<Integer>numeros) {
 		double suma=0;
