@@ -1,8 +1,18 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-
+/**
+ * 
+ * @author Víctor Rodríguez
+ * @author Eduardo González 
+ * 
+ */
 public class Clase1 {
-
+	
+/**
+ * 
+ * @param args main
+ * 
+ */
 	public static void main(String[] args) {
 				
 		ArrayList<Integer> nEnteros = new ArrayList<Integer>();
@@ -30,7 +40,11 @@ public class Clase1 {
        System.out.println(terminaEnTres(nEnteros));
     }
 	
-	
+	/**
+	 * 
+	 * @param nEnteros Guarda los números enteros introducidos
+	 * @return Devuelve un mensaje
+	 */
 	 public static String terminaEnTres (ArrayList<Integer> nEnteros) {
 	        for(int i = 0; i<nEnteros.size(); i++) {
 	            if(nEnteros.get(i)%10 == 3) {
